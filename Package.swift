@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Medico-Supplies/IOS-CoreBluetooth-Mock.git",
-                 .exact(from: "1.0.6")
+                 .exact("1.0.6")
         ),
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.5.0"),
     ],
