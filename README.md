@@ -7,6 +7,17 @@
 [![GitHub forks](https://img.shields.io/github/forks/nordicsemi/IOS-BLE-Library)](https://github.com/nordicsemi/IOS-BLE-Library/members)
 [![GitHub contributors](https://img.shields.io/github/contributors/nordicsemi/IOS-BLE-Library)](https://github.com/nordicsemi/IOS-BLE-Library/graphs/contributors)
 
+### Update - Build
+
+Run a test build using, also note the dependencies are fixed
+
+```sh
+# use xcodebuild -list to show the schemes
+xcodebuild build-for-testing \
+  -scheme iOS-BLE-Library \
+  -destination 'platform=iOS Simulator,name=iPhone 17'
+```
+
 This library is a wrapper around the [CoreBluetooth](https://developer.apple.com/documentation/corebluetooth/) framework which provides a modern async API based on [Combine](https://developer.apple.com/documentation/combine).
 
 # Library Versions
